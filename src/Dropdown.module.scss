@@ -1,0 +1,70 @@
+.dropdownContainer {
+  position: relative;
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdownHeader {
+  background: white;
+  border: 2px solid #b2ccff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+}
+
+.arrow {
+  color: #4b63b4;
+  font-size: 12px;
+}
+
+.dropdownList {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 8px;
+  padding: 8px 0;
+  list-style: none;
+  max-height: 250px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: #f0f4ff;
+  }
+}
+
+.selected {
+  background-color: #eef3ff;
+  color: #1a3dc1;
+  font-weight: 600;
+}
+
+.check {
+  color: #1a3dc1;
+}
+
+.appWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Full viewport height
+  background-color: #f9f9ff; // optional, to match the light theme
+}
